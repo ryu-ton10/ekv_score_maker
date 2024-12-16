@@ -4,27 +4,27 @@
     <div class="member-input-table">
       <div>
         <p>Aチーム</p>
-        <UInput />
-        <UInput />
-        <UInput />
+        <UInput class="input" />
+        <UInput class="input" />
+        <UInput class="input" />
       </div>
       <div>
         <p>Bチーム</p>
-        <UInput />
-        <UInput />
-        <UInput />
+        <UInput class="input" />
+        <UInput class="input" />
+        <UInput class="input" />
       </div>
       <div>
         <p>Cチーム</p>
-        <UInput />
-        <UInput />
-        <UInput />
+        <UInput class="input" />
+        <UInput class="input" />
+        <UInput class="input" />
       </div>
       <div>
         <p>Dチーム</p>
-        <UInput />
-        <UInput />
-        <UInput />
+        <UInput class="input" />
+        <UInput class="input" />
+        <UInput class="input" />
       </div>
     </div>
   </div>
@@ -35,5 +35,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+}
+
+.input {
+  margin: 10px;
 }
 </style>
