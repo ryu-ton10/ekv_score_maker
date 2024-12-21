@@ -1,8 +1,8 @@
 <template>
   <div class="score-maker-body">
-    <MemberInput />
-    <CardSelect />
-    <RaceResultInput />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
