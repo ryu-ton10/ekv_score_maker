@@ -27,6 +27,9 @@
         <UInput class="input" />
       </div>
     </div>
+    <NuxtLink to='/input'>
+      <UButton>スコア集計を開始する</UButton>
+    </NuxtLink>
   </div>
 </template>
 

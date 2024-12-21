@@ -84,6 +84,9 @@
       </UCard>
     </template>
   </UTabs>
+  <NuxtLink to='/member'>
+    <UButton>メンバー入力に戻る</UButton>
+  </NuxtLink>
 </template>
 
 <style scoped>
