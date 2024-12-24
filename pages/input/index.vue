@@ -30,7 +30,18 @@
     <template #first="{ item }">
       <UCard>
         <template #header>
-          <p>{{ item.label }}</p>
+          <MemberSelect rank="1st" />
+          <MemberSelect rank="2nd" />
+          <MemberSelect rank="3rd" />
+          <MemberSelect rank="4th" />
+          <MemberSelect rank="5th" />
+          <MemberSelect rank="6th" />
+          <MemberSelect rank="7th" />
+          <MemberSelect rank="8th" />
+          <MemberSelect rank="9th" />
+          <MemberSelect rank="10th" />
+          <MemberSelect rank="11th" />
+          <MemberSelect rank="12th" />
         </template>
       </UCard>
     </template>
@@ -89,18 +100,11 @@
   </NuxtLink>
 </template>
 
-<style scoped>
-.card-select {
-  padding: 50px 0;
-}
-.card-select-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-}
-</style>
-
 <script setup lang="ts">
+import { useMembersStore } from '@/stores/members'
+
+const membersStore = useMembersStore()
+const selectedMember = ref()
 const items = [
   {
     slot: 'first',
@@ -137,3 +141,14 @@ const items = [
 ]
 
 </script>
+
+<style scoped>
+.card-select {
+  padding: 50px 0;
+}
+.card-select-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+</style>

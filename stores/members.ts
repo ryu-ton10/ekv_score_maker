@@ -1,11 +1,16 @@
 import { defineStore } from 'pinia'
 
+export type MemberEntity = {
+  team: string;
+  name: string;
+}
+
 export const useMembersStore = defineStore('membersStore', {
   state: () => ({
     rawTeamNames: [] as Array<{ name: string }>, 
     teamName: {} as { name: string },
-    rawMembers: [] as Array<{ team: string; name: string }>,
-    member: {} as { team: string; name: string },
+    rawMembers: [] as Array<MemberEntity>,
+    member: {} as MemberEntity,
   }),
   getters: {
     teamNames: (state): Array<{ team: string; name: string }> =>
